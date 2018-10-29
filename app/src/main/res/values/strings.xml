@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TREETORAH Forest</string>
+    <string name="title_activity_act_main">TREE Forest</string>
+    <string name="title_activity_act_cad_pessoa">Cadastro Pessoa</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_endereco">Endereço</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="lbl_telefone">Telefone</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_senha_login">Senha</string>
+    <string name="title_menu_ok">Cadastrar</string>
+    <string name="title_cancelar">Cancelar</string>
+    <string name="lbl_pais">País</string>
+    <string name="lbl_estado">Estado</string>
+    <string name="lbl_num_arvore_cort">Número de Árvores Cortadas</string>
+    <string name="lbl_volume_m">Volume (m³)</string>
+    <string name="lbl_arvores_repostas">Árvores repostas</string>
+    <string name="title_activity_act_lista_pessoa">Lista de Pessoas</string>
+    <string name="title_menu_infor" />
+    <string name="title_menu_infor1">Informação</string>
+</resources>

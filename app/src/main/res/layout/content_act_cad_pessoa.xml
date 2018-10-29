@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActCadPessoa"
+    tools:showIn="@layout/act_cad_pessoa">
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="605dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtNome"
+                    android:layout_width="404dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/lbl_nome"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/txtNome"
+                    app:layout_constraintStart_toStartOf="@+id/txtNome"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+                <TextView
+                    android:id="@+id/txt_endereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lbl_endereco"
+                    app:layout_constraintEnd_toEndOf="@+id/edt_nome"
+                    app:layout_constraintStart_toStartOf="@+id/edt_nome"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_nome" />
+
+                <EditText
+                    android:id="@+id/edt_endereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_endereco"
+                    app:layout_constraintStart_toStartOf="@+id/txt_endereco"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_endereco" />
+
+                <TextView
+                    android:id="@+id/txt_telefone"
+                    android:layout_width="441dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lbl_telefone"
+                    app:layout_constraintEnd_toEndOf="@+id/edt_email"
+                    app:layout_constraintStart_toStartOf="@+id/edt_email"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+                <EditText
+                    android:id="@+id/edt_telefone"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_telefone"
+                    app:layout_constraintStart_toStartOf="@+id/txt_telefone"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_telefone" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lbl_email"
+                    app:layout_constraintEnd_toEndOf="@+id/edt_endereco"
+                    app:layout_constraintStart_toStartOf="@+id/edt_endereco"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_endereco" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_email"
+                    app:layout_constraintStart_toStartOf="@+id/txt_email"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+                <TextView
+                    android:id="@+id/txt_pais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_pais" />
+
+                <EditText
+                    android:id="@+id/edt_pais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/txt_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_estado" />
+
+                <EditText
+                    android:id="@+id/edt_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/txt_num_arvore_cort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_num_arvore_cort" />
+
+                <EditText
+                    android:id="@+id/edt_num_arvores_cort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/txt_volume_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_volume_m" />
+
+                <EditText
+                    android:id="@+id/edt_volume_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/txt_arvores_repostas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_arvores_repostas" />
+
+                <EditText
+                    android:id="@+id/edt_arvores_repostas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="________________________________________________________" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="________________________________________________________" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="________________________________________________________" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
